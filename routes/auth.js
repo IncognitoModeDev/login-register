@@ -15,11 +15,19 @@ router.post('/auth', async (req, res) => {
         const passwordAuth = await Auth.findOne({ password });
         const emailString = email.toString()
         const passwordString = password.toString()
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const apiKey = urlSearchParams.get('apiKey');
+        const apiKeyString = apiKey.toString();
+
+        if (apiKeyString != 'Your Own different API Key from the register') {
 
         if (emailString == emailAuth.email && passwordString == passwordAuth.password) {
             return res.status(200).json("Valid");
         } else {
             return res.status(400).json("Invalid");
+        }
+        } else {
+            return res.status(400).json("Invalid API Key");
         }
     }catch (err) {
         console.log(err);
