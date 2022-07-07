@@ -1,0 +1,33 @@
+{
+  "name": "login-register",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IncognitoModeDev/orcrist-auth.git"
+  },
+  "keywords": [],
+  "author": "IncognitoMode#1690",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IncognitoModeDev/orcrist-auth/issues"
+  },
+  "homepage": "https://github.com/IncognitoModeDev/orcrist-auth#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "mongoose": "^6.3.3",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

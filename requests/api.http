@@ -1,0 +1,7 @@
+POST https://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+    "email": "incognito@incognitomode.dev",
+    "password": "incognito" //this is just a proof of concept is not my real password
+}
