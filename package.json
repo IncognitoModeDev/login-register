@@ -1,6 +1,6 @@
 {
   "name": "login-register",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IncognitoModeDev/orcrist-auth.git"
+    "url": "git+https://github.com/IncognitoModeDev/login-register.git"
   },
   "keywords": [],
   "author": "IncognitoMode#1690",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IncognitoModeDev/orcrist-auth/issues"
+    "url": "https://github.com/IncognitoModeDev/login-register/issues"
   },
-  "homepage": "https://github.com/IncognitoModeDev/orcrist-auth#readme",
+  "homepage": "https://github.com/IncognitoModeDev/login-register#readme",
   "dependencies": {
     "axios": "^0.27.2",
     "config": "^3.3.7",
