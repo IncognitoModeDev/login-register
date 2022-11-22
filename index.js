@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const app = express();
 
-//rate_limit
+//rate limit
 const rateLimit = require('express-rate-limit');
 const limiter = rateLimit({
     windowMs: 10 * 60 * 1000,
@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 
 
 app.use('/', (req, res) => {
-    res.status(200).send("Hello World!")
+    res.status(200).send('You can add your own homepage here!'); //This is where you add your own homepage
 });
 
 app.use("/api/auth/",require('./routes/register'));

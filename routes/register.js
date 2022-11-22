@@ -16,7 +16,7 @@ router.post('/register', async (req, res) => {
     const emailString = email.toString();
 
     //encrypt part
-    const cryptoKey = crypto.createCipher('aes-128-cbc', 'incognitomode');
+    const cryptoKey = crypto.createCipheriv('aes-128-cbc', 'incognitomode');
     const encryptedPassword = cryptoKey.update(passwordString, 'utf8', 'hex');
     encryptedPassword += cryptoKey.final('hex');
     const encryptedEmail = cryptoKey.update(emailString, 'utf8', 'hex');
